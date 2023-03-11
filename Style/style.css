@@ -62,7 +62,6 @@ body main .hero-event h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
