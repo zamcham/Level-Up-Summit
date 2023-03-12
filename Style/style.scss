@@ -126,7 +126,9 @@ body {
 
   .hero-section::before {
     content: '';
+
     @include background(url(../Media/hero_background.svg), cover, no-repeat);
+    
     background-position: center center;
     position: absolute;
     top: 0;
@@ -140,9 +142,7 @@ body {
 $breakpoint-mobile: 768px;
 
 @media (min-width: $breakpoint-mobile) {
-
   body {
-
     header {
       position: relative;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -179,14 +179,13 @@ $breakpoint-mobile: 768px;
       justify-content: flex-end;
       align-items: center;
       padding: 0 2rem;
-  
+
       a {
         text-decoration: none;
         color: white;
         font-size: 1.2rem;
         margin: 0 0.5rem;
       }
-      
     }
 
     .navbar {
@@ -195,10 +194,10 @@ $breakpoint-mobile: 768px;
       align-items: center;
       height: 60px;
       position: relative;
-        
-      .menulinks ul{
+
+      .menulinks ul {
         display: flex;
-  
+
         .menulink {
           list-style: none;
           margin: 1rem;
@@ -208,16 +207,14 @@ $breakpoint-mobile: 768px;
       .logo {
         display: flex;
       }
-        
+
       .mobile_button {
         display: none;
       }
     }
 
-    .hero-section::before { 
+    .hero-section::before {
       height: var(--before-height-desktop);
     }
-    
   }
-
 }
