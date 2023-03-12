@@ -11,8 +11,9 @@ $gray-color: #d3d3d3;
 $black-color: #272a31;
 $gray-text-color: #535353;
 
-html{
+html {
   font-size: 62.5%;
+
   a {
     cursor: pointer;
   }
@@ -41,19 +42,18 @@ body {
       display: none;
     }
 
-    .menulinks ul{
+    .menulinks ul {
       display: none;
 
       .menulink {
         list-style: none;
         margin: 1rem;
       }
-        
+
       a {
         text-decoration: none;
       }
     }
-
   }
 
   main {
@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     padding: 2rem;
     margin-top: 2.5vh;
-    
+  
     .hero-title {
       color: $orange-color;
       font-size: 1rem;
@@ -69,7 +69,7 @@ body {
       h1 {
         margin: 0;
         font-weight: 400;
-        
+
       }
     }
 
@@ -100,7 +100,6 @@ body {
       p {
         margin: 0;
       }
-
     }
 
     .hero-directions {
@@ -110,15 +109,16 @@ body {
     .hero-time {
       font-size: 2rem;
       color: $gray-text-color;
+
       p {
         font-weight: 900;
         margin: 0;
       }
-      
     }
 
     .hero-location {
       font-size: 1.3rem;
+      
       p {
         margin: 0;
       }
