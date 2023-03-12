@@ -150,6 +150,30 @@ $breakpoint-mobile: 768px;
       z-index: 1;
     }
 
+    .hero-section {
+      width: 70%;
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 5vw;
+
+      .hero-title {
+        font-size: 1.7rem;
+      }
+
+      .hero-event {
+        font-size: 2.5vw;
+
+        h1 {
+          font-weight: 900;
+          line-height: 5vw;
+        }
+      }
+
+      .hero-description {
+        width: 50%;
+      }
+    }
+
     .top-bar {
       background-color: $black-color;
       display: flex;
