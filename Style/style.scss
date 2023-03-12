@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     padding: 2rem;
     margin-top: 2.5vh;
-  
+
     .hero-title {
       color: $orange-color;
       font-size: 1rem;
@@ -69,7 +69,6 @@ body {
       h1 {
         margin: 0;
         font-weight: 400;
-
       }
     }
 
@@ -118,7 +117,7 @@ body {
 
     .hero-location {
       font-size: 1.3rem;
-      
+
       p {
         margin: 0;
       }
@@ -127,7 +126,6 @@ body {
 
   .hero-section::before {
     content: '';
-    @include background(url(../Media/hero_background.svg), cover, no-repeat);
     background-position: center center;
     position: absolute;
     top: 0;
@@ -135,19 +133,43 @@ body {
     height: var(--before-height);
     width: var(--before-width);
     z-index: -1;
-  }
 
+    @include background(url(../Media/hero_background.svg), cover, no-repeat);
+  }
 }
 
 $breakpoint-mobile: 768px;
-@media (min-width: $breakpoint-mobile) {
-  
-  body {
 
+@media (min-width: $breakpoint-mobile) {
+  body {
     header {
       position: relative;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       z-index: 1;
+    }
+
+    .hero-section {
+      width: 70%;
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 5vw;
+
+      .hero-title {
+        font-size: 1.7rem;
+      }
+
+      .hero-event {
+        font-size: 2.5vw;
+
+        h1 {
+          font-weight: 900;
+          line-height: 5vw;
+        }
+      }
+
+      .hero-description {
+        width: 50%;
+      }
     }
 
     .top-bar {
@@ -156,14 +178,13 @@ $breakpoint-mobile: 768px;
       justify-content: flex-end;
       align-items: center;
       padding: 0 2rem;
-  
+
       a {
         text-decoration: none;
         color: white;
         font-size: 1.2rem;
         margin: 0 0.5rem;
       }
-      
     }
 
     .navbar {
@@ -172,10 +193,10 @@ $breakpoint-mobile: 768px;
       align-items: center;
       height: 60px;
       position: relative;
-        
-      .menulinks ul{
+
+      .menulinks ul {
         display: flex;
-  
+
         .menulink {
           list-style: none;
           margin: 1rem;
@@ -185,16 +206,14 @@ $breakpoint-mobile: 768px;
       .logo {
         display: flex;
       }
-        
+
       .mobile_button {
         display: none;
       }
     }
 
-    .hero-section::before { 
+    .hero-section::before {
       height: var(--before-height-desktop);
     }
-    
   }
-
 }
