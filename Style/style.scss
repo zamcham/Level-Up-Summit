@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     padding: 2rem;
     margin-top: 2.5vh;
-  
+
     .hero-title {
       color: $orange-color;
       font-size: 1rem;
@@ -69,7 +69,6 @@ body {
       h1 {
         margin: 0;
         font-weight: 400;
-
       }
     }
 
@@ -118,7 +117,7 @@ body {
 
     .hero-location {
       font-size: 1.3rem;
-      
+
       p {
         margin: 0;
       }
@@ -136,12 +135,12 @@ body {
     width: var(--before-width);
     z-index: -1;
   }
-
 }
 
 $breakpoint-mobile: 768px;
+
 @media (min-width: $breakpoint-mobile) {
-  
+
   body {
 
     header {
