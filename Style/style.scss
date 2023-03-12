@@ -128,7 +128,6 @@ body {
     content: '';
 
     @include background(url(../Media/hero_background.svg), cover, no-repeat);
-    
     background-position: center center;
     position: absolute;
     top: 0;
