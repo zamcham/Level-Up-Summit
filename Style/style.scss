@@ -126,8 +126,6 @@ body {
 
   .hero-section::before {
     content: '';
-
-    @include background(url(../Media/hero_background.svg), cover, no-repeat);
     background-position: center center;
     position: absolute;
     top: 0;
@@ -135,6 +133,8 @@ body {
     height: var(--before-height);
     width: var(--before-width);
     z-index: -1;
+
+    @include background(url(../Media/hero_background.svg), cover, no-repeat);
   }
 }
 
