@@ -61,6 +61,8 @@ body {
     flex-direction: column;
     padding: 2rem;
     margin-top: 2.5vh;
+    height: 60vh;
+    justify-content: center;
 
     .hero-title {
       color: $orange-color;
@@ -136,6 +138,65 @@ body {
 
     @include background(url(../Media/hero_background.svg), cover, no-repeat);
   }
+
+  .main-program {
+    padding: 2rem;
+    background-image: url(../Media/x_background.jpg);
+    background-size: 7%;
+
+    .container {
+      text-align: center;
+      color: white;
+      font-size: 1.8rem;
+    }
+
+    .container_programs {
+      flex: 1;
+    }
+
+    .program-card {
+      font-size: 1.3rem;
+      text-align: center;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      background-color: rgba($color: #ffffff, $alpha: 0.2);
+
+      i.icon_main_programs::before {
+        font-size: 3rem;
+        width: 10%;
+        height: 50px;
+        color: white;
+        padding: 0 1rem;
+        vertical-align: middle;
+      }
+
+      h4 {
+        font-size: 1.7rem;
+        color: $orange-color;
+        width: 20%;
+        padding: 0 1rem;
+      }
+
+      p {
+        color: white;
+        width: 70%;
+        text-align: left;
+        padding: 0 1rem;
+        margin: 0;
+      }
+    }
+
+    button {
+      color: white;
+      background: $orange-color;
+      height: 6rem;
+      border: none;
+      border-bottom: solid white 0.1rem;
+    }
+  }
 }
 
 $breakpoint-mobile: 768px;
@@ -151,6 +212,8 @@ $breakpoint-mobile: 768px;
     .hero-section {
       width: 70%;
       max-width: 1200px;
+      height: 80vh;
+      max-height: 800px;
       margin: auto;
       margin-top: 5vw;
 
@@ -214,6 +277,56 @@ $breakpoint-mobile: 768px;
 
     .hero-section::before {
       height: var(--before-height-desktop);
+    }
+
+    .main-program {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: 2.5%;
+
+      h3 {
+        margin: 0;
+      }
+
+      .container {
+        margin: 5rem 0;
+        max-width: 1200px;
+      }
+
+      #empty_container {
+        width: 70%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: stretch;
+      }
+
+      .program-card {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        margin: 0 0.15rem;
+  
+        h4 {
+          width: 100%;
+          margin: 1rem 0;
+        }
+  
+        p {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      button {
+        color: white;
+        background: none;
+        border: none;
+        border-bottom: solid white 0.1rem;
+        height: auto;
+      }
     }
   }
 }
