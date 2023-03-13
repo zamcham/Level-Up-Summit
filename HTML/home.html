@@ -34,35 +34,35 @@
         </nav>
     </header>
     <main class="hero-section">
-        <div class="hero-title">
-            <h1>"Hello! Sharing World!"</h1>
-        </div>
-        <div class="hero-event">
-            <h1>Creative commons<br>global summit<br>2023</h1>
-        </div>
-        <div class="hero-description">
-            <p>A joyful celebration believing in the values of openness and sharing, creating a positive change with people from over 80 different countries is taking place in October, in Korea</p>
-        </div>
-        <div class="hero-directions">
-            <div class="hero-time">
-                <p>2023.10.15(THU) ~ 16(FRI)</p>
+        <div class="container_reg left_text">
+            <div class="hero-title">
+                <h1>"Hello! Sharing World!"</h1>
             </div>
-            <div class="hero-location">
-                <p>@ National Museum of Korea, Art Center Nabi and More</p>
+            <div class="hero-event">
+                <h1>Creative commons<br>global summit<br>2023</h1>
+            </div>
+            <div class="hero-description">
+                <p>A joyful celebration believing in the values of openness and sharing, creating a positive change with people from over 80 different countries is taking place in October, in Korea</p>
+            </div>
+            <div class="hero-directions">
+                <div class="hero-time">
+                    <p>2023.10.15(THU) ~ 16(FRI)</p>
+                </div>
+                <div class="hero-location">
+                    <p>@ National Museum of Korea, Art Center Nabi and More</p>
+                </div>
             </div>
         </div>
-      
-
     </main>
     <section class="main-program">
-        <div class="container">
-            <h3 class="title">
-                Main Program
-            </h3>
+        <div class="container_reg centered">
+            <h3>Main Program</h3>
+            <hr class="roundeddivider">
         </div>
-        <div id="empty_container"></div>
-        <div class="container">
-            <button>SEE THE HOLE PROGRAM</button>
+        <div class="container_reg" id="empty_container"></div>
+        <div class="container_reg">
+            <button id="desktop_program_button">SEE THE HOLE PROGRAM</button>
+            <button id="mobile_program_button">Join CC Summit 2023</button>
         </div>
         <template id="progam-container-template">
             <div class="program-card">
@@ -71,6 +71,36 @@
                 <p>Listen to experienced owners on strategy plans for the current year.</p>
             </div>
         </template>
+    </section>
+    <section class="featured-speakers">
+        <div class="container_reg centered">
+            <h3>Featured Speakers</h3>
+        </div>
+        <div class="container_reg" id="featured-speakers-grid">
+        </div>
+        <template id="featured_sp_card_template">
+            <div class="featured_sp_card" >
+                <div class="speaker_headshot">
+                    <img src="../Media/Speakers/p1.jpg" class="heashot_img">
+                </div>
+                <div class="speaker_info">
+                    <h4 class="speaker_name">Name Lastname</h4>
+                    <p class="speaker_designation">Berkman Professor of Enterprenourship at University Studio</p>
+                    <span class="bio_divider"></span>
+                    <p class="speaker_bio">Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players.</p>
+                </div>
+            </div>
+        </template>
+    </section>
+    <section class="partners_section">
+        <div class="container_reg centered">
+            <h3>Partners</h3>
+            <span class="orange_divider"></span>
+            <ul class="partners_list">
+                <li class="partner_logo"><img src="../Media/logos/ealogo.png"></li>
+                <li class="partner_logo"><img src="../Media/logos/pslogo.png"></li>
+            </ul>
+        </div>
     </section>
     <script src="../Scripts/mainscripts.js"></script>
 </body>
