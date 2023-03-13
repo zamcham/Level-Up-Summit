@@ -1,21 +1,4 @@
-// #region HeroSection Background 
-const pixels = 'px';
-const heroSection = document.querySelector('.hero-section');
-
-function updateHeroHeight() {
-  const heroHeight = heroSection.clientHeight + window.innerHeight * 0.05;
-  const heroHeightDesktop = heroSection.clientHeight + window.innerHeight * 0.2;
-  heroSection.style.setProperty('--before-height', `${heroHeight}${pixels}`);
-  heroSection.style.setProperty('--before-height-desktop', `${heroHeightDesktop}${pixels}`);
-}
-
-window.addEventListener('resize', updateHeroHeight);
-
-updateHeroHeight(); // initial call to set height on page load
-heroSection.style.setProperty('--before-width', '100%');
-// #endregion
-
-//#region Main Program Data
+// #region Main Program Data
 const programsList = [
   {
     program: 'Strategy',
@@ -67,3 +50,70 @@ for (let i = 0; i < programsList.length; i += 1) {
   // Insert the program card into the programs container
   programsContainer.appendChild(programCard);
 }
+// #endregion
+
+// #region Featured Speakers Data
+const featuredSpeakersList = [
+  {
+    speakerName: 'Lisa Johnson',
+    designation: 'Berkman Professor of Enterprenourship at University Studio',
+    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    photo: '../Media/Speakers/p1.jpg',
+  },
+  {
+    speakerName: 'Lisa Johnson',
+    designation: 'Berkman Professor of Enterprenourship at University Studio',
+    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    photo: '../Media/Speakers/p2.jpg',
+  },
+  {
+    speakerName: 'Lisa Johnson',
+    designation: 'Berkman Professor of Enterprenourship at University Studio',
+    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    photo: '../Media/Speakers/p3.jpg',
+  },
+  {
+    speakerName: 'Lisa Johnson',
+    designation: 'Berkman Professor of Enterprenourship at University Studio',
+    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    photo: '../Media/Speakers/p4.jpg',
+  },
+  {
+    speakerName: 'Lisa Johnson',
+    designation: 'Berkman Professor of Enterprenourship at University Studio',
+    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    photo: '../Media/Speakers/p5.jpg',
+  },
+  {
+    speakerName: 'Lisa Johnson',
+    designation: 'Berkman Professor of Enterprenourship at University Studio',
+    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    photo: '../Media/Speakers/p6.jpg',
+  },
+]
+
+// #endregion
+
+// #region Speaker Section Generation 
+const speakersTemplate = document.getElementById('featured_sp_card_template');
+
+// Get the container where the program cards will be inserted
+const speakersContainer = document.getElementById('featured-speakers-grid');
+
+// Loop through the programsList array and generate the HTML for each program
+for (let i = 0; i < featuredSpeakersList.length; i += 1) {
+  // Clone the program card template
+  const speakerCard = speakersTemplate.content.cloneNode(true);
+  const currentSpeaker = featuredSpeakersList[i];
+
+  // Fill in the details for the program
+  speakerCard.querySelector('.heashot_img').src = currentSpeaker.photo;
+  speakerCard.querySelector('.speaker_name').textContent = currentSpeaker.speakerName;
+  speakerCard.querySelector('.speaker_designation').textContent = currentSpeaker.designation;
+  speakerCard.querySelector('.speaker_bio').textContent = currentSpeaker.bio;
+
+  // Insert the program card into the programs container
+  speakersContainer.appendChild(speakerCard);
+}
+// #endregion
+
