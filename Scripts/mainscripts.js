@@ -100,7 +100,7 @@ const speakersTemplate = document.getElementById('featured_sp_card_template');
 // Get the container where the program cards will be inserted
 const speakersContainer = document.getElementById('featured-speakers-grid');
 
-// Loop through the programsList array and generate the HTML for each program
+// Loop through the speakerList array and generate the HTML for each program
 for (let i = 0; i < featuredSpeakersList.length; i += 1) {
   // Clone the program card template
   const speakerCard = speakersTemplate.content.cloneNode(true);
@@ -117,3 +117,20 @@ for (let i = 0; i < featuredSpeakersList.length; i += 1) {
 }
 // #endregion
 
+// #region Load More Button
+const loadMoreButton = document.querySelector('#load-more-button');
+let currentlyShown = 2;
+
+function clickedMore() { // eslint-disable-line no-unused-vars
+  let speakerContainers = [...document.querySelectorAll('.featured_sp_card')];
+  
+  for (let i = currentlyShown; i < currentlyShown + 4; i++) {
+    speakerContainers[i].style.display = 'flex';
+  }
+
+  currentlyShown += 4;
+
+  if (currentlyShown >= speakerContainers.length) {
+    loadMoreButton.style.display = 'none';
+  }
+}
