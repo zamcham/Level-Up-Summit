@@ -93,7 +93,7 @@ const featuredSpeakersList = [
 ];
 
 // #endregion
-// #region Speaker Section Generation 
+// #region Speaker Section Generation
 const speakersTemplate = document.getElementById('featured_sp_card_template');
 
 // Get the container where the program cards will be inserted
@@ -132,18 +132,17 @@ function clickedMore() { // eslint-disable-line no-unused-vars
     loadMoreButton.style.display = 'none';
   }
 }
-// #endregion 
+// #endregion
 // #region Toggle Button
 function init() { // eslint-disable-line no-unused-vars
   const dropDownMenu = document.querySelector('.mobile_toggle_links');
   const toggleButton = document.querySelector('#toggle_button_menu');
   const closeButton = document.querySelector('#x_button_mobile');
-  const openButtonClass = document.querySelector('.mobile_button'); 
+  const openButtonClass = document.querySelector('.mobile_button');
   const closeButtonClass = document.querySelector('.x_button');
   const body = document.querySelector('body');
   const computedStyle = getComputedStyle(body);
-  const overflow = computedStyle.overflow;
-  function showDropDownMenu() { // eslint-disable-line no-unused-vars
+  const { overflow } = computedStyle;  function showDropDownMenu() { // eslint-disable-line no-unused-vars
     dropDownMenu.classList.toggle('open');
     openButtonClass.classList.toggle('hidden');
     closeButtonClass.classList.toggle('hidden');
@@ -156,4 +155,4 @@ function init() { // eslint-disable-line no-unused-vars
   toggleButton.onclick = showDropDownMenu;
   closeButton.onclick = showDropDownMenu;
 }
-// #endregion  
+// #endregion
