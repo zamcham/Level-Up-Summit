@@ -142,7 +142,8 @@ function init() { // eslint-disable-line no-unused-vars
   const closeButtonClass = document.querySelector('.x_button');
   const body = document.querySelector('body');
   const computedStyle = getComputedStyle(body);
-  const { overflow } = computedStyle;  function showDropDownMenu() { // eslint-disable-line no-unused-vars
+  <!-- eslint-disable-next-line max-len -->
+  const { overflow } = computedStyle; function showDropDownMenu() { // eslint-disable-line no-unused-vars
     dropDownMenu.classList.toggle('open');
     openButtonClass.classList.toggle('hidden');
     closeButtonClass.classList.toggle('hidden');

@@ -155,7 +155,6 @@ body {
   h3 {
     font-size: 2rem;
   }
-
 }
 
 .left_text {
@@ -518,7 +517,8 @@ main {
 
 
 #t1 {
-  background-image: url('../Media/2021expo.jpg');background-size: cover;
+  background-image: url('../Media/2021expo.jpg');
+  background-size: cover;
 
   h4,
   p {
@@ -537,7 +537,8 @@ main {
 }
 
 #t2 {
-  background-image: url('../Media/2022expo.jpg');background-size: cover;
+  background-image: url('../Media/2022expo.jpg');
+  background-size: cover;
 
   h4,
   p {
@@ -718,9 +719,6 @@ $breakpoint-mobile: 768px;
   .speaker_info {
     flex: 2;
     padding: 0 1rem;
-
-    h4 {
-    }
   }
 
   #load-more-button {
