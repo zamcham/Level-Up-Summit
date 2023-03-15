@@ -10,9 +10,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;900&display=swap');
     </style>
-
 </head>
-<body>
+<body onload="init()">
     <header>
         <div class="top-bar">
             <a href="#"><img src="../Media/icons/facebook_icon.svg" alt="Facebook Icon"></a>
@@ -20,29 +19,45 @@
             <a href="#">Español</a>
         </div>
         <nav class="navbar">
-            <div class="logo">Branding</div>
+            <div class="logo">
+                <img src="../Media/Branding.svg" alt="Level Up Logo" href="./home.html">
+            </div>
             <div class="menulinks">
                 <ul>
-                    <a href="#"><li class="menulink">Home</li></a>
-                    <a href="#"><li class="menulink">About</li></a>
+                    <li class="menulink"><a href="/HTML/home.html">Home</a></li>
+                    <li class="menulink"><a href="/HTML/about.html">About</a></li>
                     <a href="#"><li class="menulink">Join</li></a>
                 </ul>
             </div>
             <div class="mobile_button">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="toggle_button_menu"></i>
             </div>
         </nav>
+        <div class="mobile_toggle_links">
+            <div class="logo">
+                <img src="../Media/Branding.svg" alt="Level Up Logo">
+            </div>
+            <div class="menulinks">
+                <ul>
+                    <li class="menulink"><a href="/HTML/home.html">Home</li></a>
+                    <li class="menulink"><a href="/HTML/about.html">About</li></a>
+                </ul>
+            </div>
+            <div class="joinbutton">
+                <button>Register Now</button>
+            </div>
+        </div>
     </header>
     <main class="hero-section">
         <div class="container_reg left_text">
             <div class="hero-title">
-                <h1>"Hello! Sharing World!"</h1>
+                <h1>"Hello! Gaming World!"</h1>
             </div>
             <div class="hero-event">
-                <h1>Creative commons<br>global summit<br>2023</h1>
+                <h1>Level Up<br>global summit<br>2023</h1>
             </div>
             <div class="hero-description">
-                <p>A joyful celebration believing in the values of openness and sharing, creating a positive change with people from over 80 different countries is taking place in October, in Korea</p>
+                <p>The ultimate event for game designers. Attendees can learn new skills, network with industry leaders, and monetize their projects, happening this Ocotber in L.A!</p>
             </div>
             <div class="hero-directions">
                 <div class="hero-time">
@@ -57,7 +72,7 @@
     <section class="main-program">
         <div class="container_reg centered">
             <h3>Main Program</h3>
-            <hr class="roundeddivider">
+            <span class="orange_divider"></span>
         </div>
         <div class="container_reg" id="empty_container"></div>
         <div class="container_reg">
@@ -75,6 +90,7 @@
     <section class="featured-speakers">
         <div class="container_reg centered">
             <h3>Featured Speakers</h3>
+            <span class="orange_divider"></span>
         </div>
         <div class="container_reg" id="featured-speakers-grid">
         </div>
@@ -103,9 +119,26 @@
             <ul class="partners_list">
                 <li class="partner_logo"><img src="../Media/logos/ealogo.png"></li>
                 <li class="partner_logo"><img src="../Media/logos/pslogo.png"></li>
+                <li class="partner_logo"><img src="../Media/logos/itchlogo.png"></li>
+                <li class="partner_logo"><img src="../Media/logos/steamlogo.png"></li>
             </ul>
         </div>
     </section>
+    <footer class="footer_container">
+        <div class="container_reg footer">
+            <div class="footer_logo">
+                <img src="../Media/Branding.svg" alt="Level Up Logo">
+            </div>
+            <div class="footer_disclaimer">
+                <p class="f_disclaimer">
+                    2023 Level Up Summit. Some rights reserved
+                </p>
+                <p>
+                    The Level Up Global Summit is the ultimate event for anyone looking to take their game design career to the next level.
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="../Scripts/mainscripts.js"></script>
 </body>
 </html>
