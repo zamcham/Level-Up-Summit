@@ -37,6 +37,21 @@ body {
 .navbar .logo {
   display: none;
 }
+.navbar .mobile_toggle_links ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  padding: 0;
+}
+.navbar .mobile_toggle_links ul li {
+  list-style: none;
+  margin: 2rem auto;
+  text-align: center;
+}
+.navbar .mobile_toggle_links ul a {
+  text-decoration: none;
+  color: #272a31;
+}
 .navbar .menulinks ul {
   display: none;
 }
@@ -88,21 +103,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.mobile_toggle_links ul {
-  display: flex;
-  flex-direction: column;
-  font-size: 2.5rem;
-  padding: 0;
-}
-.mobile_toggle_links ul li {
-  list-style: none;
-  margin: 2rem auto;
-  text-align: center;
-}
-.mobile_toggle_links ul a {
-  text-decoration: none;
-  color: #272a31;
 }
 .mobile_toggle_links .joinbutton {
   display: flex;

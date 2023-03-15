@@ -52,6 +52,24 @@ body {
     display: none;
   }
 
+  .mobile_toggle_links ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #272a31;
+    }
+  }
+
   .menulinks ul {
     display: none;
 
@@ -108,24 +126,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.5rem;
-    padding: 0;
-
-    li {
-      list-style: none;
-      margin: 2rem auto;
-      text-align: center;
-    }
-
-    a {
-      text-decoration: none;
-      color: #272a31;
-    }
   }
 
   .joinbutton {
