@@ -321,7 +321,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-
 }
 
 .featured_sp_card {
@@ -436,16 +435,16 @@ main {
 
   .footer_disclaimer {
     margin: 0 2rem;
+
     .f_disclaimer {
       font-weight: 700;
       font-size: 1.5rem;
     }
-  
+
     p {
       font-size: 1.3rem;
     }
   }
-
 }
 
 .hero_about {
