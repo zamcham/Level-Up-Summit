@@ -136,6 +136,22 @@ body {
   height: 90%;
 }
 
+.mobile_toggle_links.open ul {
+  margin: 1rem auto;
+  padding: 0;
+}
+
+.mobile_toggle_links.open ul li {
+  list-style: none;
+  font-size: 3rem;
+  margin: 2.5rem 0;
+}
+
+.mobile_toggle_links.open ul a {
+  color: #272a31;
+  text-decoration: none;
+}
+
 .container_reg {
   padding: 2rem;
 }

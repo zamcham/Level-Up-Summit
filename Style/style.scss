@@ -147,6 +147,22 @@ body {
 
 .mobile_toggle_links.open {
   height: 90%;
+
+  ul {
+    margin: 1rem auto;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 3rem;
+      margin: 2.5rem 0;
+    }
+
+    a {
+      color: #272a31;
+      text-decoration: none;
+    }
+  }
 }
 
 .container_reg {
