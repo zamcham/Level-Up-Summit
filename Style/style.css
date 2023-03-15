@@ -47,13 +47,24 @@ body {
 .navbar .menulinks ul a {
   text-decoration: none;
 }
-.navbar #toggle_button_menu {
+.navbar #toggle_button_menu,
+.navbar #x_button_mobile {
   position: absolute;
   display: flex;
   font-size: 2.5rem;
   margin-left: 2rem;
   margin-top: 2rem;
   z-index: 10;
+}
+
+.mobile_button,
+.x_button {
+  display: flex;
+}
+
+.mobile_button.hidden,
+.x_button.hidden {
+  display: none;
 }
 
 .mobile_toggle_links {
@@ -377,6 +388,111 @@ main {
   font-size: 1.3rem;
 }
 
+.hero_about {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5vh 0;
+}
+.hero_about .about_contact {
+  font-size: 1.5rem;
+}
+.hero_about #about_email {
+  font-weight: 500;
+  border-bottom: solid 1px black;
+}
+
+.about_the_logo {
+  border-top: solid 1px #d3d3d3;
+  border-bottom: solid 1px #d3d3d3;
+  padding: 4rem 0;
+}
+
+.about_description {
+  text-align: justify;
+  background-color: #d3d3d3;
+  border: solid 1px white;
+  font-size: 1.3rem;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+}
+
+.about_content {
+  text-align: justify;
+  font-size: 1.3rem;
+  margin: 2.5rem 0;
+}
+
+.past_sumits {
+  padding: 4rem 0;
+}
+
+.twocolum {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.twocolum .pastbutton {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.twocolum .pastbutton .ab_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(236, 82, 66, 0.7);
+}
+
+#t1 {
+  background-image: url("../Media/2021expo.jpg");
+  background-size: cover;
+}
+#t1 h4,
+#t1 p {
+  position: absolute;
+  z-index: 2;
+}
+#t1 h4 {
+  font-size: 4rem;
+}
+#t1 p {
+  top: 55%;
+  font-size: 1.7rem;
+}
+
+#t2 {
+  background-image: url("../Media/2022expo.jpg");
+  background-size: cover;
+}
+#t2 h4,
+#t2 p {
+  position: absolute;
+  z-index: 2;
+}
+#t2 h4 {
+  font-size: 4rem;
+}
+#t2 p {
+  top: 55%;
+  font-size: 1.7rem;
+}
+
+.footer_container_about {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 3rem 0;
+}
+
 @media (min-width: 768px) {
   header {
     position: relative;
@@ -417,7 +533,13 @@ main {
     height: 2.5vw;
     width: 5vw;
   }
-  .navbar .mobile_button {
+  .navbar .logo a {
+    display: flex;
+    height: 2.5vw;
+    width: 5vw;
+  }
+  .navbar .mobile_button,
+  .navbar .x_button {
     display: none;
   }
   .mobile_toggle_links {
@@ -516,5 +638,50 @@ main {
   .footer .footer_logo {
     height: 5vw;
     justify-content: start;
+  }
+  .about_title h3 {
+    margin: 1rem 0;
+  }
+  .about_description {
+    text-align: center;
+    padding: 0 5rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+  }
+  .about_content {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+  }
+  .about_content img {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    padding: 1.5rem;
+  }
+  .twocolum {
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+  }
+  .twocolum .pastbutton {
+    position: relative;
+    width: 40%;
+    height: 20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .twocolum .pastbutton .ab_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(236, 82, 66, 0.7);
   }
 }/*# sourceMappingURL=style.css.map */

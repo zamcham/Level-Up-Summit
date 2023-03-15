@@ -138,12 +138,27 @@ function clickedMore() { // eslint-disable-line no-unused-vars
 
 // #region Toggle Button
 function init() {
-  console.log('testing');
   let dropDownMenu = document.querySelector('.mobile_toggle_links');
   let toggleButton = document.querySelector('#toggle_button_menu');
+  let closeButton = document.querySelector('#x_button_mobile');
+  let openButtonClass = document.querySelector('.mobile_button'); 
+  let closeButtonClass = document.querySelector('.x_button');
+  const body = document.querySelector('body');
+  const computedStyle = getComputedStyle(body);
+  const overflow = computedStyle.overflow;
+
   function showDropDownMenu() { // eslint-disable-line no-unused-vars
     dropDownMenu.classList.toggle('open');
+    openButtonClass.classList.toggle('hidden');
+    closeButtonClass.classList.toggle('hidden');
+
+    if (overflow === 'hidden') {
+      document.body.style.overflow = 'auto';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
   }
   toggleButton.onclick = showDropDownMenu;
+  closeButton.onclick = showDropDownMenu;
 }
 // #endregion  

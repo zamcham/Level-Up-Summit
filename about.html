@@ -20,22 +20,28 @@
         </div>
         <nav class="navbar">
             <div class="logo">
-                <img src="./Media/Branding.svg" alt="Level Up Logo" href="./index.html">
+                <a href="index.html">
+                    <img src="./Media/Branding.svg" alt="Level Up Logo" href="./index.html">
+                </a>
             </div>
             <div class="menulinks">
                 <ul>
                     <li class="menulink"><a href="./index.html">Home</a></li>
                     <li class="menulink"><a href="./about.html">About</a></li>
-                    <a href="#"><li class="menulink">Join</li></a>
                 </ul>
             </div>
             <div class="mobile_button">
                 <i class="fa-solid fa-bars" id="toggle_button_menu"></i>
             </div>
+            <div class="x_button hidden">
+                <i class="fa-regular fa-circle-xmark" id="x_button_mobile"></i>
+            </div>
         </nav>
         <div class="mobile_toggle_links">
             <div class="logo">
-                <img src="./Media/Branding.svg" alt="Level Up Logo">
+                <a href="index.html">
+                    <img src="./Media/Branding.svg" alt="Level Up Logo" href="./index.html">
+                </a>
             </div>
             <div class="menulinks">
                 <ul>
@@ -43,11 +49,82 @@
                     <li class="menulink"><a href="./about.html">About</li></a>
                 </ul>
             </div>
-            <div class="joinbutton">
-                <button>Register Now</button>
-            </div>
         </div>
     </header>
+    <main class="hero_about">
+        <div class="container_reg centered">
+            <div class="hero-title">
+                <h1>Learn About The</h1>
+            </div>
+            <div class="hero-event">
+                <h1>Level Up<br>Global Summit</h1>
+                <span class="orange_divider"></span>
+            </div>
+            <div class="about_description">
+                <p>
+                    Welcome to the Level Up Global Summit, a premier event for game developers and industry professionals. Our summit brings together experts and enthusiasts from across the gaming world to network, learn, and improve their skills.
+                </p>
+                <p>Inspired by the growing demand for quality games and the increasing interest in the gaming industry, the Level Up Global Summit was created to provide a platform for game developers and industry professionals to come together and share their experiences and knowledge.
+                </p>
+            </div>
+            <div class="about_contact m5">
+                <p>If you have questions, comments or any other inquiry, feel free to contact us at<br>
+                    <span id="about_email">info@levelupsumit.com</span></p>
+            </div>
+        </div>
+    </main>
+    <section class="about_the_logo">
+        <div class="container_reg centered">
+            <div class="about_title">
+                <h3>About the Level Up Global Sumit Logo</h3>
+                <span class="orange_divider"></span>
+            </div>
+            <div class="about_content">
+                <p>The logo of the Level Up Global Summit was created through a collaboration between a team of talented graphic designers and the summit's organizing committee. The team aimed to create a logo that would reflect the summit's mission of bringing together game developers and industry professionals from around the world to learn, network, and improve their skills.</p>
+            </div>
+            <div class="about_content">
+                <img src="./Media/Branding.svg">
+            </div>
+        </div>
+    </section>
+    <section class="past_sumits">
+        <div class="container_reg centered">
+            <div class="about_title">
+                <h3>See The Past Global Sumits</h3>
+                <span class="orange_divider"></span>
+            </div>
+            <div class="about_content">
+                <p>Take a look at the last two sumit that took place in New York and Mexico City</p>
+            </div>
+            <div class="twocolum">
+                <div class="pastbutton" id="t1">
+                    <h4>2021</h4>
+                    <p>Level Up Sumit - New York, USA</p>
+                    <div class="ab_overlay"></div>
+                </div>
+                <div class="pastbutton" id="t2">
+                    <h4>2022</h4>
+                    <p>Level Up Sumit - Mexico City, Mexico</p>
+                    <div class="ab_overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_container_about">
+        <div class="container_reg footer">
+            <div class="footer_logo">
+                <img src="./Media/Branding_white.svg" alt="Level Up Logo">
+            </div>
+            <div class="footer_disclaimer">
+                <p class="f_disclaimer">
+                    2023 Level Up Summit. Some rights reserved
+                </p>
+                <p>
+                    The Level Up Global Summit is the ultimate event for anyone looking to take their game design career to the next level.
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="./Scripts/mainscripts.js"></script>
 </body>
 </html>

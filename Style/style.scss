@@ -67,7 +67,8 @@ body {
   }
 
 
-  #toggle_button_menu {
+  #toggle_button_menu,
+  #x_button_mobile {
     position: absolute;
     display: flex;
     font-size: 2.5rem;
@@ -76,6 +77,16 @@ body {
     z-index: 10;
   }
 
+}
+
+.mobile_button,
+.x_button {
+  display: flex;
+}
+
+.mobile_button.hidden,
+.x_button.hidden {
+  display: none;
 }
 
 .mobile_toggle_links {
@@ -440,7 +451,119 @@ main {
 
 }
 
+.hero_about {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5vh 0;
 
+  .about_contact {
+    font-size: 1.5rem;
+  }
+  
+  #about_email {
+    font-weight: 500;
+    border-bottom: solid 1px black;
+  }
+}
+
+.about_the_logo {
+  border-top: solid 1px $gray-color;
+  border-bottom: solid 1px $gray-color;
+  padding: 4rem 0;
+}
+
+.about_description {
+  text-align: justify;
+  background-color: $gray-color;
+  border: solid 1px white;
+  font-size: 1.3rem;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+}
+
+.about_content {
+  text-align: justify;
+  font-size: 1.3rem;
+  margin: 2.5rem 0;
+}
+
+.past_sumits {
+  padding: 4rem 0;
+}
+
+.twocolum {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+
+  .pastbutton {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .ab_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(236, 82, 66, 0.7);
+    }
+  }
+}
+
+
+#t1 {
+  background-image: url('../Media/2021expo.jpg');background-size: cover;
+
+  h4,
+  p {
+    position: absolute;
+    z-index: 2;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
+
+  p {
+    top: 55%;
+    font-size: 1.7rem;
+  }
+}
+
+#t2 {
+  background-image: url('../Media/2022expo.jpg');background-size: cover;
+
+  h4,
+  p {
+    position: absolute;
+    z-index: 2;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
+
+  p {
+    top: 55%;
+    font-size: 1.7rem;
+  }
+}
+
+.footer_container_about {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 3rem 0;
+}
 
 $breakpoint-mobile: 768px;
 
@@ -488,9 +611,16 @@ $breakpoint-mobile: 768px;
       display: flex;
       height: 2.5vw;
       width: 5vw;
+
+      a {
+        display: flex;
+        height: 2.5vw;
+        width: 5vw;
+      }
     }
 
-    .mobile_button {
+    .mobile_button,
+    .x_button {
       display: none;
     }
   }
@@ -617,6 +747,61 @@ $breakpoint-mobile: 768px;
     .footer_logo {
       height: 5vw;
       justify-content: start;
+    }
+  }
+
+  .about_title {
+    h3 {
+      margin: 1rem 0;
+    }
+    
+  }
+
+  .about_description {
+    text-align: center;
+    padding: 0 5rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+  }
+
+  .about_content {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+
+    img {
+      width: 40%;
+      height: auto;
+      text-align: center;
+      border: 1px solid #e1e1e1;
+      padding: 1.5rem;
+    }
+  }
+
+  .twocolum {
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+
+    .pastbutton {
+      position: relative;
+      width: 40%;
+      height: 20rem;
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      .ab_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(236, 82, 66, 0.7);
+      }
     }
   }
 }
