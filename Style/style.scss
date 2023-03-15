@@ -63,9 +63,7 @@ body {
     a {
       text-decoration: none;
     }
-
   }
-
 
   #toggle_button_menu,
   #x_button_mobile {
@@ -76,7 +74,6 @@ body {
     margin-top: 2rem;
     z-index: 10;
   }
-
 }
 
 .mobile_button,
@@ -100,7 +97,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   
+
   .logo {
     margin: 2rem auto;
     padding: 1.5rem;
@@ -171,8 +168,8 @@ body {
 }
 
 main {
- background-image: url(../Media/hero_background.svg);
- background-size: cover;
+  background-image: url(../Media/hero_background.svg);
+  background-size: cover;
 }
 
 .hero-section {
@@ -185,7 +182,7 @@ main {
 .hero-title {
   color: $orange-color;
   font-size: 1rem;
-  
+
   h1 {
     margin: 0;
     font-weight: 400;
@@ -195,7 +192,7 @@ main {
 .hero-event {
   color: $orange-color;
   font-size: 4vw;
-  
+
   h1 {
     margin: 0 0 2rem;
     text-transform: uppercase;
@@ -227,16 +224,16 @@ main {
   .hero-time {
     font-size: 2rem;
     color: $gray-text-color;
-  
+
     p {
       font-weight: 900;
       margin: 0;
     }
   }
-  
+
   .hero-location {
     font-size: 1.3rem;
-  
+
     p {
       margin: 0;
     }
@@ -263,7 +260,7 @@ main {
     align-items: center;
     padding: 1.5rem 1rem;
     margin: 1.5rem 0;
-    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    background-color: rgba($color: #fff, $alpha: 0.2);
 
     i.icon_main_programs::before {
       font-size: 3rem;

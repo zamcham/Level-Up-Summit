@@ -2,29 +2,29 @@
 const programsList = [
   {
     program: 'Strategy',
-    icon: "fa-regular fa-chess-bishop",
+    icon: 'fa-regular fa-chess-bishop',
     Description: 'Listen to experienced owners on strategy plans for the current year.',
   },
   {
     program: 'Leadership',
-    icon: "fa-regular fa-flag",
+    icon: 'fa-regular fa-flag',
     Description: 'Testing to experienced owners .',
   },
   {
     program: 'Forums',
-    icon: "fa-regular fa-comments",
+    icon: 'fa-regular fa-comments',
     Description: 'Listen to experienced owners on strategy plans for the current year.',
   },
   {
     program: 'Marketing',
-    icon: "fa-regular fa-newspaper",
+    icon: 'fa-regular fa-newspaper',
     Description: 'Listen to experienced owners on strategy plans for the current year.',
   },
   {
     program: 'Network',
-    icon: "fa-regular fa-user",
+    icon: 'fa-regular fa-user',
     Description: 'Listen to experienced owners on strategy plans for the current year.',
-  }
+  },
 ];
 // #endregion
 
@@ -42,8 +42,8 @@ for (let i = 0; i < programsList.length; i += 1) {
   // Fill in the details for the program
   const program = programsList[i];
   const icon = programCard.querySelector('i');
-  icon.classList.remove("current-class");
-  icon.classList.add(...program.icon.split(" "), "icon_main_programs");
+  icon.classList.remove('current-class');
+  icon.classList.add(...program.icon.split(' '), 'icon_main_programs');
   programCard.querySelector('h4').textContent = program.program;
   programCard.querySelector('p').textContent = program.Description;
 
@@ -90,10 +90,9 @@ const featuredSpeakersList = [
     bio: 'Andrei is a narrative designer at the studio behind the award-winning Uncharted and The Last of Us series. He is a talented writer and game designer, with a passion for creating immersive, character-driven stories.',
     photo: './Media/Speakers/p6.jpg',
   },
-]
+];
 
 // #endregion
-
 // #region Speaker Section Generation 
 const speakersTemplate = document.getElementById('featured_sp_card_template');
 
@@ -122,9 +121,8 @@ const loadMoreButton = document.querySelector('#load-more-button');
 let currentlyShown = 2;
 
 function clickedMore() { // eslint-disable-line no-unused-vars
-  let speakerContainers = [...document.querySelectorAll('.featured_sp_card')];
-  
-  for (let i = currentlyShown; i < currentlyShown + 4; i++) {
+  const speakerContainers = [...document.querySelectorAll('.featured_sp_card')];
+  for (let i = currentlyShown; i < currentlyShown + 4; i += 1) {
     speakerContainers[i].style.display = 'flex';
   }
 
@@ -135,23 +133,20 @@ function clickedMore() { // eslint-disable-line no-unused-vars
   }
 }
 // #endregion 
-
 // #region Toggle Button
-function init() {
-  let dropDownMenu = document.querySelector('.mobile_toggle_links');
-  let toggleButton = document.querySelector('#toggle_button_menu');
-  let closeButton = document.querySelector('#x_button_mobile');
-  let openButtonClass = document.querySelector('.mobile_button'); 
-  let closeButtonClass = document.querySelector('.x_button');
+function init() { // eslint-disable-line no-unused-vars
+  const dropDownMenu = document.querySelector('.mobile_toggle_links');
+  const toggleButton = document.querySelector('#toggle_button_menu');
+  const closeButton = document.querySelector('#x_button_mobile');
+  const openButtonClass = document.querySelector('.mobile_button'); 
+  const closeButtonClass = document.querySelector('.x_button');
   const body = document.querySelector('body');
   const computedStyle = getComputedStyle(body);
   const overflow = computedStyle.overflow;
-
   function showDropDownMenu() { // eslint-disable-line no-unused-vars
     dropDownMenu.classList.toggle('open');
     openButtonClass.classList.toggle('hidden');
     closeButtonClass.classList.toggle('hidden');
-
     if (overflow === 'hidden') {
       document.body.style.overflow = 'auto';
     } else {
