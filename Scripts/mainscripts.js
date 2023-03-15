@@ -56,38 +56,38 @@ for (let i = 0; i < programsList.length; i += 1) {
 const featuredSpeakersList = [
   {
     speakerName: 'Lisa Johnson',
-    designation: 'Berkman Professor of Enterprenourship at University Studio',
-    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    designation: 'Creative Director at Blizzard Entertainment',
+    bio: 'Lisa has been a key creative force at Blizzard Entertainment for over a decade. She is best known for his work on the massively popular World of Warcraft franchise',
     photo: '../Media/Speakers/p1.jpg',
   },
   {
-    speakerName: 'Lisa Johnson',
-    designation: 'Berkman Professor of Enterprenourship at University Studio',
-    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    speakerName: 'James Ivanov',
+    designation: 'Senior Marketing Manager at Electronic Arts',
+    bio: 'A marketing guru with over 15 years of experience in the gaming industry. She has worked on several high-profile marketing campaigns for Electronic Arts',
     photo: '../Media/Speakers/p2.jpg',
   },
   {
-    speakerName: 'Lisa Johnson',
-    designation: 'Berkman Professor of Enterprenourship at University Studio',
-    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    speakerName: 'Rachel Coleman',
+    designation: 'Lead Game Designer at Ubisoft',
+    bio: 'Rachel has worked on several critically acclaimed titles, including Assassins Creed, Far Cry, and Watch Dogs. Rachel is an expert in game mechanics, systems design, and player experience.',
     photo: '../Media/Speakers/p3.jpg',
   },
   {
-    speakerName: 'Lisa Johnson',
-    designation: 'Berkman Professor of Enterprenourship at University Studio',
-    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    speakerName: 'Samantha Kim',
+    designation: 'Founder and CEO of The Wandering Bard Studio',
+    bio: 'Samantha is an award-winning game developer and entrepreneur. She is the founder and CEO of The Wandering Bard, an indie game studio that has produced several successful titles',
     photo: '../Media/Speakers/p4.jpg',
   },
   {
-    speakerName: 'Lisa Johnson',
-    designation: 'Berkman Professor of Enterprenourship at University Studio',
-    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    speakerName: 'Todd Lindwall',
+    designation: 'Lead Programmer at CD Projekt Red',
+    bio: 'Todd is a lead programmer at CD Projekt Red, the studio behind the acclaimed Witcher series and Cyberpunk 2077. He is a highly skilled programmer with over 10 years of experience in the gaming industry.',
     photo: '../Media/Speakers/p5.jpg',
   },
   {
-    speakerName: 'Lisa Johnson',
-    designation: 'Berkman Professor of Enterprenourship at University Studio',
-    bio: 'Name is an experienced game developer with over 10 years of experience in the industry. passionate about creating engaging and innovative gameplay experiences that resonate with players',
+    speakerName: 'Andrei Hall',
+    designation: 'Narrative Designer at Naughty Dog',
+    bio: 'Andrei is a narrative designer at the studio behind the award-winning Uncharted and The Last of Us series. He is a talented writer and game designer, with a passion for creating immersive, character-driven stories.',
     photo: '../Media/Speakers/p6.jpg',
   },
 ]
@@ -134,3 +134,16 @@ function clickedMore() { // eslint-disable-line no-unused-vars
     loadMoreButton.style.display = 'none';
   }
 }
+// #endregion 
+
+// #region Toggle Button
+function init() {
+  console.log('testing');
+  let dropDownMenu = document.querySelector('.mobile_toggle_links');
+  let toggleButton = document.querySelector('#toggle_button_menu');
+  function showDropDownMenu() { // eslint-disable-line no-unused-vars
+    dropDownMenu.classList.toggle('open');
+  }
+  toggleButton.onclick = showDropDownMenu;
+}
+// #endregion  

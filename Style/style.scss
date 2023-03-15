@@ -25,6 +25,15 @@ body {
   padding: 0;
 }
 
+.orange_divider {
+  display: flex;
+  margin: 0 auto;
+  content: '';
+  height: 0.2rem;
+  width: 7rem;
+  background-color: $orange-color;
+}
+
 .top-bar {
   display: none;
 }
@@ -34,7 +43,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: auto;
-  background-color: white;
+  background-color: transparent;
   font-size: 1.5rem;
   position: absolute;
   top: 0;
@@ -54,7 +63,82 @@ body {
     a {
       text-decoration: none;
     }
+
   }
+
+
+  #toggle_button_menu {
+    position: absolute;
+    display: flex;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    z-index: 10;
+  }
+
+}
+
+.mobile_toggle_links {
+  background-color: white;
+  position: absolute;
+  top: 4.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+  height: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   
+  .logo {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    width: 50%;
+  }
+
+  .menulinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #272a31;
+    }
+  }
+
+  .joinbutton {
+    display: flex;
+    justify-content: center;
+
+    button {
+      background-color: $orange-color;
+      text-transform: uppercase;
+      color: white;
+      font-size: 1.7rem;
+      border: none;
+      border-radius: 0.5rem;
+      height: 6rem;
+      width: 80%;
+    }
+  }
+}
+
+.mobile_toggle_links.open {
+  height: 90%;
 }
 
 .container_reg {
@@ -157,17 +241,7 @@ main {
   h3 {
     color: white;
     padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  hr.roundeddivider {
-    background-color: $orange-color;
-    border: none;
-    border-radius: 5px;
-    width: 10rem;
-    margin: 0.5rem auto;
-    height: 0.2rem;
-
+    margin-bottom: 0.5rem;
   }
 
   .program-card {
@@ -228,6 +302,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 3vh 0;
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 #featured-speakers-grid {
@@ -276,12 +355,12 @@ main {
       font-size: 1.3rem;
       font-style: italic;
       color: $orange-color;
-      margin: 0.5rem auto;
+      margin: 0.5rem 0;
     }
 
     .speaker_bio {
       font-size: 1.3rem;
-      margin: 0.5rem auto;
+      margin: 0.5rem 0;
     }
   }
 }
@@ -303,12 +382,20 @@ main {
 }
 
 .partners_section {
-  background-color: #191919;
+  background-color: #414141;
+  margin: 3vh 0;
+
+  h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .partners_list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
 
   .partner_logo {
     list-style: none;
@@ -318,6 +405,39 @@ main {
       width: 10rem;
     }
   }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
+
+  .footer_logo {
+    height: 15vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 50%;
+    }
+  }
+
+  .footer_disclaimer {
+    margin: 0 2rem;
+    .f_disclaimer {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
 }
 
 
@@ -348,10 +468,12 @@ $breakpoint-mobile: 768px;
 
   .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
     position: relative;
+    height: 60px;
+    width: 70%;
+    margin: auto;
 
     .menulinks ul {
       display: flex;
@@ -364,11 +486,17 @@ $breakpoint-mobile: 768px;
 
     .logo {
       display: flex;
+      height: 2.5vw;
+      width: 5vw;
     }
 
     .mobile_button {
       display: none;
     }
+  }
+
+  .mobile_toggle_links {
+    display: none;
   }
 
   .hero-section {
@@ -471,5 +599,24 @@ $breakpoint-mobile: 768px;
 
   #load-more-button {
     display: none;
+  }
+
+  .partners_section,
+  .footer_container {
+    min-height: 10vw;
+    margin: 3vh 0;
+  }
+
+  .partners_list {
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    flex-direction: row;
+
+    .footer_logo {
+      height: 5vw;
+      justify-content: start;
+    }
   }
 }
