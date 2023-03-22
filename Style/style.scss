@@ -654,14 +654,7 @@ $breakpoint-mobile: 768px;
 
   .hero-section {
     height: 100vh;
-  }
 
-  .container_reg {
-    width: 70%;
-    max-width: 1200px;
-  }
-
-  .hero-section {
     #bg1,
     #bg2,
     #bg3,
@@ -674,6 +667,11 @@ $breakpoint-mobile: 768px;
       object-fit: cover;
       z-index: -5;
     }
+  }
+
+  .container_reg {
+    width: 70%;
+    max-width: 1200px;
   }
 
   .hero-title {
