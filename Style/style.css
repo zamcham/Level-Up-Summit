@@ -1,7 +1,6 @@
 html {
   font-size: 62.5%;
 }
-
 html a {
   cursor: pointer;
 }
@@ -35,42 +34,34 @@ body {
   position: absolute;
   top: 0;
 }
-
 .navbar .logo {
   display: none;
 }
-
 .navbar .mobile_toggle_links ul {
   display: flex;
   flex-direction: column;
   font-size: 2.5rem;
   padding: 0;
 }
-
 .navbar .mobile_toggle_links ul li {
   list-style: none;
   margin: 2rem auto;
   text-align: center;
 }
-
 .navbar .mobile_toggle_links ul a {
   text-decoration: none;
   color: #272a31;
 }
-
 .navbar .menulinks ul {
   display: none;
 }
-
 .navbar .menulinks ul .menulink {
   list-style: none;
   margin: 1rem;
 }
-
 .navbar .menulinks ul a {
   text-decoration: none;
 }
-
 .navbar #toggle_button_menu,
 .navbar #x_button_mobile {
   position: absolute;
@@ -103,24 +94,20 @@ body {
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .mobile_toggle_links .logo {
   margin: 2rem auto;
   padding: 1.5rem;
   width: 50%;
 }
-
 .mobile_toggle_links .menulinks {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .mobile_toggle_links .joinbutton {
   display: flex;
   justify-content: center;
 }
-
 .mobile_toggle_links .joinbutton button {
   background-color: #ec5242;
   text-transform: uppercase;
@@ -135,18 +122,15 @@ body {
 .mobile_toggle_links.open {
   height: 90%;
 }
-
 .mobile_toggle_links.open ul {
   margin: 1rem auto;
   padding: 0;
 }
-
 .mobile_toggle_links.open ul li {
   list-style: none;
   font-size: 3rem;
   margin: 2.5rem 0;
 }
-
 .mobile_toggle_links.open ul a {
   color: #272a31;
   text-decoration: none;
@@ -155,7 +139,6 @@ body {
 .container_reg {
   padding: 2rem;
 }
-
 .container_reg h3 {
   font-size: 2rem;
 }
@@ -169,23 +152,30 @@ body {
   margin: auto;
 }
 
-main {
-  background-image: url(../Media/hero_background.svg);
-  background-size: cover;
-}
-
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60vh;
 }
+.hero-section #bg1,
+.hero-section #bg2,
+.hero-section #bg3,
+.hero-section #bg4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -5;
+}
 
 .hero-title {
   color: #ec5242;
   font-size: 1rem;
 }
-
 .hero-title h1 {
   margin: 0;
   font-weight: 400;
@@ -195,7 +185,6 @@ main {
   color: #ec5242;
   font-size: 4vw;
 }
-
 .hero-event h1 {
   margin: 0 0 2rem;
   text-transform: uppercase;
@@ -215,7 +204,6 @@ main {
   border: solid white 3px;
   margin: 0 0 2rem;
 }
-
 .hero-description p {
   margin: 0;
 }
@@ -223,21 +211,17 @@ main {
 .hero-directions {
   margin-top: 0;
 }
-
 .hero-directions .hero-time {
   font-size: 2rem;
   color: #535353;
 }
-
 .hero-directions .hero-time p {
   font-weight: 900;
   margin: 0;
 }
-
 .hero-directions .hero-location {
   font-size: 1.3rem;
 }
-
 .hero-directions .hero-location p {
   margin: 0;
 }
@@ -248,13 +232,11 @@ main {
   background-size: 7%;
   text-align: center;
 }
-
 .main-program h3 {
   color: white;
   padding-bottom: 0;
   margin-bottom: 0.5rem;
 }
-
 .main-program .program-card {
   font-size: 1.3rem;
   text-align: center;
@@ -265,7 +247,6 @@ main {
   margin: 1.5rem 0;
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 .main-program .program-card i.icon_main_programs::before {
   font-size: 3rem;
   width: 10%;
@@ -274,14 +255,12 @@ main {
   padding: 0 1rem;
   vertical-align: middle;
 }
-
 .main-program .program-card h4 {
   font-size: 1.7rem;
   color: #ec5242;
   width: 20%;
   padding: 0 1rem;
 }
-
 .main-program .program-card p {
   color: white;
   width: 70%;
@@ -289,15 +268,12 @@ main {
   padding: 0 1rem;
   margin: 0;
 }
-
 .main-program #empty_container {
   padding: 0;
 }
-
 .main-program #desktop_program_button {
   display: none;
 }
-
 .main-program #mobile_program_button {
   color: white;
   background-color: #ec5242;
@@ -312,9 +288,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3vh 0;
+  background-color: white;
 }
-
 .featured-speakers h3 {
   margin-bottom: 0.5rem;
 }
@@ -330,16 +305,13 @@ main {
   justify-content: center;
   padding: 1rem 0;
 }
-
 .featured_sp_card .speaker_headshot {
   flex: 1;
 }
-
 .featured_sp_card .speaker_headshot img {
   display: block;
   width: 100%;
 }
-
 .featured_sp_card .speaker_info {
   display: flex;
   flex-direction: column;
@@ -347,12 +319,10 @@ main {
   flex: 2;
   padding: 0 1rem;
 }
-
 .featured_sp_card .speaker_info .speaker_name {
   font-size: 1.7rem;
   margin: 0.5rem 0;
 }
-
 .featured_sp_card .speaker_info .bio_divider {
   width: 15%;
   height: 0.2rem;
@@ -361,14 +331,12 @@ main {
   border-radius: 5px;
   margin: 0.5rem 0;
 }
-
 .featured_sp_card .speaker_info .speaker_designation {
   font-size: 1.3rem;
   font-style: italic;
   color: #ec5242;
   margin: 0.5rem 0;
 }
-
 .featured_sp_card .speaker_info .speaker_bio {
   font-size: 1.3rem;
   margin: 0.5rem 0;
@@ -394,7 +362,6 @@ main {
   background-color: #414141;
   margin: 3vh 0;
 }
-
 .partners_section h3 {
   color: white;
   margin-bottom: 0.5rem;
@@ -406,12 +373,10 @@ main {
   justify-content: center;
   padding: 0;
 }
-
 .partners_list .partner_logo {
   list-style: none;
   margin: 0 2rem;
 }
-
 .partners_list .partner_logo img {
   width: 10rem;
 }
@@ -423,7 +388,6 @@ main {
   flex-direction: column;
   margin: auto;
 }
-
 .footer .footer_logo {
   height: 15vw;
   width: 100%;
@@ -431,20 +395,16 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .footer .footer_logo img {
   height: 50%;
 }
-
 .footer .footer_disclaimer {
   margin: 0 2rem;
 }
-
 .footer .footer_disclaimer .f_disclaimer {
   font-weight: 700;
   font-size: 1.5rem;
 }
-
 .footer .footer_disclaimer p {
   font-size: 1.3rem;
 }
@@ -455,11 +415,9 @@ main {
   flex-direction: column;
   padding: 2.5vh 0;
 }
-
 .hero_about .about_contact {
   font-size: 1.5rem;
 }
-
 .hero_about #about_email {
   font-weight: 500;
   border-bottom: solid 1px black;
@@ -496,7 +454,6 @@ main {
   flex-direction: column;
   margin: auto;
 }
-
 .twocolum .pastbutton {
   position: relative;
   width: 100%;
@@ -508,7 +465,6 @@ main {
   justify-content: center;
   color: white;
 }
-
 .twocolum .pastbutton .ab_overlay {
   position: absolute;
   top: 0;
@@ -522,17 +478,14 @@ main {
   background-image: url("../Media/2021expo.jpg");
   background-size: cover;
 }
-
 #t1 h4,
 #t1 p {
   position: absolute;
   z-index: 2;
 }
-
 #t1 h4 {
   font-size: 4rem;
 }
-
 #t1 p {
   top: 55%;
   font-size: 1.7rem;
@@ -542,17 +495,14 @@ main {
   background-image: url("../Media/2022expo.jpg");
   background-size: cover;
 }
-
 #t2 h4,
 #t2 p {
   position: absolute;
   z-index: 2;
 }
-
 #t2 h4 {
   font-size: 4rem;
 }
-
 #t2 p {
   top: 55%;
   font-size: 1.7rem;
@@ -567,10 +517,12 @@ main {
 @media (min-width: 768px) {
   header {
     position: relative;
+    position: fixed;
+    width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    background-color: white;
   }
-
   .top-bar {
     background-color: #272a31;
     display: flex;
@@ -578,14 +530,12 @@ main {
     align-items: center;
     padding: 0 2rem;
   }
-
   .top-bar a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     margin: 0 0.5rem;
   }
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -595,63 +545,63 @@ main {
     width: 70%;
     margin: auto;
   }
-
   .navbar .menulinks ul {
     display: flex;
   }
-
   .navbar .menulinks ul .menulink {
     list-style: none;
     margin: 1rem;
   }
-
   .navbar .logo {
     display: flex;
     height: 2.5vw;
     width: 5vw;
   }
-
   .navbar .logo a {
     display: flex;
     height: 2.5vw;
     width: 5vw;
   }
-
   .navbar .mobile_button,
   .navbar .x_button {
     display: none;
   }
-
   .mobile_toggle_links {
     display: none;
   }
-
   .hero-section {
-    height: 80vh;
+    height: 100vh;
   }
-
   .container_reg {
     width: 70%;
     max-width: 1200px;
   }
-
+  .hero-section #bg1,
+  .hero-section #bg2,
+  .hero-section #bg3,
+  .hero-section #bg4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -5;
+  }
   .hero-title {
     font-size: 1.7rem;
   }
-
   .hero-event {
     font-size: 2.5vw;
   }
-
   .hero-event h1 {
     font-weight: 900;
     line-height: 5vw;
   }
-
   .hero-description {
     width: 50%;
   }
-
   .main-program {
     height: auto;
     display: flex;
@@ -660,28 +610,23 @@ main {
     align-items: center;
     background-size: 2.5%;
   }
-
   .main-program #empty_container {
     display: flex;
     align-items: stretch;
   }
-
   .main-program .program-card {
     flex-direction: column;
     padding: 1.5rem 1rem;
     margin: 0 0.15rem;
   }
-
   .main-program .program-card h4 {
     width: 100%;
     margin: 1rem 0;
   }
-
   .main-program .program-card p {
     width: 100%;
     text-align: center;
   }
-
   .main-program #desktop_program_button {
     display: flex;
     margin: auto;
@@ -691,75 +636,60 @@ main {
     border: none;
     border-bottom: solid white 0.1rem;
   }
-
   .main-program #mobile_program_button {
     display: none;
   }
-
   #featured-speakers-grid {
     grid-template-columns: 1fr 1fr; /* two equally divided columns */
     grid-gap: 20px; /* gap between grid items */
   }
-
   .featured_sp_card {
     display: flex;
   }
-
   .speaker_headshot {
     padding: 0 1rem;
   }
-
   .speaker_headshot img {
     display: block;
     width: 100%;
     height: auto;
   }
-
   .speaker_info {
     flex: 2;
     padding: 0 1rem;
   }
-
   #load-more-button {
     display: none;
   }
-
   .partners_section,
   .footer_container {
     min-height: 10vw;
     margin: 3vh 0;
   }
-
   .partners_list {
     justify-content: space-evenly;
   }
-
   .footer {
     flex-direction: row;
   }
-
   .footer .footer_logo {
     height: 5vw;
     justify-content: start;
   }
-
   .about_title h3 {
     margin: 1rem 0;
   }
-
   .about_description {
     text-align: center;
     padding: 0 5rem;
     line-height: 2.5rem;
     font-size: 1.4rem;
   }
-
   .about_content {
     text-align: center;
     line-height: 2.5rem;
     font-size: 1.4rem;
   }
-
   .about_content img {
     width: 40%;
     height: auto;
@@ -767,13 +697,11 @@ main {
     border: 1px solid #e1e1e1;
     padding: 1.5rem;
   }
-
   .twocolum {
     justify-content: center;
     flex-direction: row;
     margin: auto;
   }
-
   .twocolum .pastbutton {
     position: relative;
     width: 40%;
@@ -785,7 +713,6 @@ main {
     justify-content: center;
     color: white;
   }
-
   .twocolum .pastbutton .ab_overlay {
     position: absolute;
     top: 0;
