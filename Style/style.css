@@ -169,16 +169,25 @@ body {
   margin: auto;
 }
 
-main {
-  background-image: url(../Media/hero_background.svg);
-  background-size: cover;
-}
-
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60vh;
+}
+
+.hero-section #bg1,
+.hero-section #bg2,
+.hero-section #bg3,
+.hero-section #bg4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -5;
 }
 
 .hero-title {
@@ -312,7 +321,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3vh 0;
+  background-color: white;
 }
 
 .featured-speakers h3 {
@@ -567,8 +576,11 @@ main {
 @media (min-width: 768px) {
   header {
     position: relative;
+    position: fixed;
+    width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    background-color: white;
   }
 
   .top-bar {
@@ -627,12 +639,26 @@ main {
   }
 
   .hero-section {
-    height: 80vh;
+    height: 100vh;
   }
 
   .container_reg {
     width: 70%;
     max-width: 1200px;
+  }
+
+  .hero-section #bg1,
+  .hero-section #bg2,
+  .hero-section #bg3,
+  .hero-section #bg4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -5;
   }
 
   .hero-title {
@@ -794,4 +820,4 @@ main {
     width: 100%;
     background-color: rgba(236, 82, 66, 0.7);
   }
-}/*# sourceMappingURL=style.css.map */
+}
