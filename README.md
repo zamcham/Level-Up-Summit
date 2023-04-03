@@ -63,7 +63,7 @@ In addition to its impressive design, the LevelUp Summit website features an arr
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://zamcham.github.io/Capstone-conference/)
+- [Live Demo Link](https://zamcham.github.io/Level-Up-Summit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
