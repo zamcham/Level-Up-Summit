@@ -157,15 +157,26 @@ function init() { // eslint-disable-line no-unused-vars
 }
 // #endregion
 // #region Scroll Effect
-const background1 = document.getElementById('bg1');
 const background2 = document.getElementById('bg2');
 const background3 = document.getElementById('bg3');
 const background4 = document.getElementById('bg4');
-window.addEventListener('scroll', () => {
-  const value = window.scrollY;
-  background1.style.top = `${value * 0.6}px`;
+
+let latestKnownScrollY = 0;
+let ticking = false;
+
+function update() {
+  const value = latestKnownScrollY;
   background2.style.top = `${value * 0.8}px`;
   background3.style.top = `${value * 0.4}px`;
   background4.style.top = `${value * 0.9}px`;
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  latestKnownScrollY = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(update);
+    ticking = true;
+  }
 });
 // #region
