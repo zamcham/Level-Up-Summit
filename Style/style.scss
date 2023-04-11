@@ -413,7 +413,6 @@ body {
 
 .partners_section {
   background-color: #414141;
-  margin: 3vh 0;
 
   h3 {
     color: white;
@@ -766,7 +765,11 @@ $breakpoint-mobile: 768px;
   .partners_section,
   .footer_container {
     min-height: 10vw;
-    margin: 3vh 0;
+    padding: 2vh 0;
+  }
+
+  .footer_container {
+    background-color: #fff;
   }
 
   .partners_list {
