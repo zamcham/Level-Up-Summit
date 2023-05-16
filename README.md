@@ -38,8 +38,6 @@ The LevelUp Summit website boasts a modern and intuitive design that's optimized
 
 In addition to its impressive design, the LevelUp Summit website features an array of cutting-edge functionalities. Its dynamic pages are optimized for fast loading speeds and smooth transitions. This Capstone Project is a testament of my skills in SASS, CSS, HTML, and JavaScript.
 
-[🎥 Check out this video of me explaining the key features of the project](https://www.loom.com/share/1a2b5e7e1ce744acb831c75d3ede5c46)
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
