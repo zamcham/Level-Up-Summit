@@ -246,6 +246,7 @@ body {
   padding: 1.5rem 1rem;
   margin: 1.5rem 0;
   background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
 }
 .main-program .program-card i.icon_main_programs::before {
   font-size: 3rem;
@@ -268,6 +269,9 @@ body {
   padding: 0 1rem;
   margin: 0;
 }
+.main-program .program-card:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .main-program #empty_container {
   padding: 0;
 }
@@ -289,7 +293,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding: 2vh 0;
 }
 .featured-speakers h3 {
   margin-bottom: 0.5rem;
@@ -308,10 +311,21 @@ body {
 }
 .featured_sp_card .speaker_headshot {
   flex: 1;
+  position: relative;
 }
 .featured_sp_card .speaker_headshot img {
   display: block;
   width: 100%;
+  z-index: 1;
+}
+.featured_sp_card .speaker_headshot .deco-speakers {
+  position: absolute;
+  z-index: 0;
+  top: -50px;
+  left: -30px;
+}
+.featured_sp_card .speaker_headshot .deco-speakers img {
+  width: 30px;
 }
 .featured_sp_card .speaker_info {
   display: flex;
@@ -635,6 +649,10 @@ body {
     background: none;
     border: none;
     border-bottom: solid white 0.1rem;
+    transition: all 0.3s;
+  }
+  .main-program #desktop_program_button:hover {
+    color: #ec5242;
   }
   .main-program #mobile_program_button {
     display: none;
