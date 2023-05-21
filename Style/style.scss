@@ -284,6 +284,7 @@ body {
     padding: 1.5rem 1rem;
     margin: 1.5rem 0;
     background-color: rgba($color: #fff, $alpha: 0.2);
+    transition: all 0.5s;
 
     i.icon_main_programs::before {
       font-size: 3rem;
@@ -308,6 +309,10 @@ body {
       padding: 0 1rem;
       margin: 0;
     }
+  }
+
+  .program-card:hover {
+    background-color: rgba($color: #fff, $alpha: 0.3);
   }
 
   #empty_container {
@@ -353,10 +358,23 @@ body {
 
   .speaker_headshot {
     flex: 1;
-
+    position: relative;
+    
     img {
       display: block;
       width: 100%;
+      z-index: 1;
+    }
+
+    .deco-speakers {
+      position: absolute;
+      z-index: 0;
+      top: -50px;
+      left: -30px;
+
+      img {
+        width: 30px;
+      }
     }
   }
 
@@ -727,6 +745,11 @@ $breakpoint-mobile: 768px;
       background: none;
       border: none;
       border-bottom: solid white 0.1rem;
+      transition: all 0.3s;
+    }
+
+    #desktop_program_button:hover {
+      color: $orange-color;
     }
 
     #mobile_program_button {
