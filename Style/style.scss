@@ -370,12 +370,12 @@ body {
 
   .decoration-block {
     position: absolute;
-    top: -5px;
+    top: 0;
     left: -10px;
     z-index: 1;
 
     img {
-      width: 50px;
+      width: 10vw;
     }
   }
 
@@ -611,7 +611,7 @@ $breakpoint-mobile: 768px;
     position: fixed;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 10;
     background-color: white;
   }
 
@@ -765,6 +765,15 @@ $breakpoint-mobile: 768px;
 
   .featured_sp_card {
     display: flex;
+
+    .decoration-block {
+      top: 0;
+      left: 0;
+
+      img {
+        width: 3.5vw;
+      }
+    }
   }
 
   .speaker_headshot {

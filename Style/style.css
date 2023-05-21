@@ -320,12 +320,12 @@ body {
 }
 .featured_sp_card .decoration-block {
   position: absolute;
-  top: -5px;
+  top: 0;
   left: -10px;
   z-index: 1;
 }
 .featured_sp_card .decoration-block img {
-  width: 50px;
+  width: 10vw;
 }
 .featured_sp_card .speaker_info {
   display: flex;
@@ -534,7 +534,7 @@ body {
     position: fixed;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 10;
     background-color: white;
   }
   .top-bar {
@@ -663,6 +663,13 @@ body {
   }
   .featured_sp_card {
     display: flex;
+  }
+  .featured_sp_card .decoration-block {
+    top: 0;
+    left: 0;
+  }
+  .featured_sp_card .decoration-block img {
+    width: 3.5vw;
   }
   .speaker_headshot {
     padding: 0 1rem;
