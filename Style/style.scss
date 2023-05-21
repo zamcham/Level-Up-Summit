@@ -284,6 +284,7 @@ body {
     padding: 1.5rem 1rem;
     margin: 1.5rem 0;
     background-color: rgba($color: #fff, $alpha: 0.2);
+    transition: all 0.5s;
 
     i.icon_main_programs::before {
       font-size: 3rem;
@@ -308,6 +309,10 @@ body {
       padding: 0 1rem;
       margin: 0;
     }
+  }
+
+  .program-card:hover {
+    background-color: rgba($color: #fff, $alpha: 0.3);
   }
 
   #empty_container {
@@ -350,13 +355,27 @@ body {
   display: none;
   justify-content: center;
   padding: 1rem 0;
+  position: relative;
 
   .speaker_headshot {
     flex: 1;
+    z-index: 3;
 
     img {
       display: block;
       width: 100%;
+
+    }
+  }
+
+  .decoration-block {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 1;
+
+    img {
+      width: 10vw;
     }
   }
 
@@ -592,7 +611,7 @@ $breakpoint-mobile: 768px;
     position: fixed;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 10;
     background-color: white;
   }
 
@@ -727,6 +746,11 @@ $breakpoint-mobile: 768px;
       background: none;
       border: none;
       border-bottom: solid white 0.1rem;
+      transition: all 0.3s;
+    }
+
+    #desktop_program_button:hover {
+      color: $orange-color;
     }
 
     #mobile_program_button {
@@ -741,6 +765,15 @@ $breakpoint-mobile: 768px;
 
   .featured_sp_card {
     display: flex;
+
+    .decoration-block {
+      top: 0;
+      left: 0;
+
+      img {
+        width: 3.5vw;
+      }
+    }
   }
 
   .speaker_headshot {
