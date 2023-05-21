@@ -355,26 +355,27 @@ body {
   display: none;
   justify-content: center;
   padding: 1rem 0;
+  position: relative;
 
   .speaker_headshot {
     flex: 1;
-    position: relative;
-    
+    z-index: 3;
+
     img {
       display: block;
       width: 100%;
-      z-index: 1;
+
     }
+  }
 
-    .deco-speakers {
-      position: absolute;
-      z-index: 0;
-      top: -50px;
-      left: -30px;
+  .decoration-block {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    z-index: 1;
 
-      img {
-        width: 30px;
-      }
+    img {
+      width: 50px;
     }
   }
 
